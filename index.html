@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostgreSQL Learning Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>PostgreSQL Learning Platform</h1>
+            <ul class="nav-links">
+                <li><a href="#modules">บทเรียน</a></li>
+                <li><a href="#slides">ดาวน์โหลดสไลด์</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>มาเรียนรู้ PostgreSQL ไปด้วยกัน</h1>
+            <p>สิ่งที่คุณจะได้เรียนรู้:
+                การติดตั้งและตั้งค่า PostgreSQL บนระบบต่างๆ
+                การสร้างและออกแบบฐานข้อมูลที่มีประสิทธิภาพ
+                การจัดการและดูแลฐานข้อมูล PostgreSQL อย่างมืออาชีพ
+                การใช้ SQL สำหรับการสืบค้นข้อมูล การจัดการข้อมูล และการดำเนินการต่างๆ
+                การปรับแต่งการทำงานของ PostgreSQL สำหรับการประมวลผลข้อมูลที่มีปริมาณมาก
+                การใช้ฟีเจอร์ที่มีประสิทธิภาพ เช่น Indexing, Triggers, Functions และอื่นๆ
+                การรักษาความปลอดภัยของฐานข้อมูลและข้อมูล
+                การเพิ่มประสิทธิภาพในการค้นหาข้อมูลและจัดการฐานข้อมูลให้เร็วขึ้น
+                การสร้างการสำรองข้อมูลและการกู้คืนข้อมูลเมื่อเกิดปัญหา
+                การตรวจสอบและดูแลระบบ PostgreSQL ผ่านเครื่องมือการตรวจสอบต่างๆ</p>
+        </div>
+    </div>
+
+    <!-- Module Section -->
+    <section id="modules" class="section-container">
+        <h2>บทเรียนและแล็บฝึกปฏิบัติ</h2>
+        <div class="module-grid">
+            <!-- Module 1 -->
+            <div class="module-card" id="module1">
+                <div class="module-header">
+                    <div class="module-number">1</div>
+                    <h3>การติดตั้ง PostgreSQL</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/11QO7Ei98iXIXrLTOiGlrv6npe48MBra6/preview" 
+                                width="250" 
+                                height="200"  
+                                allow="autoplay" 
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                    <p>เรียนรู้ขั้นตอนการติดตั้ง PostgreSQL บนระบบปฏิบัติการของคุณตั้งแต่เริ่มต้นจนพร้อมใช้งาน รวมถึงการกำหนดค่าเบื้องต้น</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/19Kf77yHwy242tLWuoJTUb0QsCTxGxGeu?usp=sharing
+                        " class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                        <a href="https://drive.google.com/uc?export=download&id=11QO7Ei98iXIXrLTOiGlrv6npe48MBra6" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Module 2 --> 
+            <div class="module-card" id="module2">
+                <div class="module-header">
+                    <div class="module-number">2</div>
+                    <h3>Replicationและmaster_slave</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                    </div>
+                    <p>กระบวนการคัดลอกข้อมูลจากฐานข้อมูลต้นฉบับ (Primary Database) ไปยังฐานข้อมูลสำรอง (Replica Database) อย่างสม่ำเสมอ</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1te1NuPcSJvh8jcQR7QUNfG-QqUQrwpd8?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Module 3 - ไม่มีวิดีโอ -->
+            <div class="module-card" id="module3">
+                <div class="module-header">
+                    <div class="module-number">3</div>
+                    <h3>PostgreSQL Architecture</h3>
+                </div>
+                <div class="module-content">
+                    <p>สำรวจโครงสร้างภายในของ PostgreSQL อย่างละเอียด รวมถึงส่วนประกอบหลักต่างๆ เช่น Server Processes, Data Storage, และ Query Execution เพื่อสร้างพื้นฐานความเข้าใจในการทำงานของฐานข้อมูล</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1CIOCWtzrAWva2fCUkL_hEXypAh4xRORN?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card" id="module2">
+                <div class="module-header">
+                    <div class="module-number">4</div>
+                    <h3>Database Cluster</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1IdOwgPwMceYYZrd5pb4-SqWpa5tvruXP/preview" 
+                                 width="250" 
+                                 height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+            
+                    <p>เข้าใจแนวคิดของ Database Cluster และเรียนรู้วิธีสร้างและจัดการคลัสเตอร์ PostgreSQL เพื่อเพิ่มประสิทธิภาพและความน่าเชื่อถือของฐานข้อมูล</p>
+            
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1Rz3IhITjwFgUO6rV8syxxACEm727jhd9?usp=sharing" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+        
+                        <a href="https://drive.google.com/uc?export=download&id=1IdOwgPwMceYYZrd5pb4-SqWpa5tvruXP" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Module 5 -->
+            <div class="module-card" id="module5">
+                <div class="module-header">
+                    <div class="module-number">5</div>
+                    <h3>ConfigurationFiles</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1z3siN52SGbVyI_HO7QZfqkBOL5BhEuTm/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+            
+                    <p>เรียนรู้วิธีการใช่ .conf เพื่อปรับแต่งพฤติกรรมและการทำงานของซอฟต์แวร์หรือบริการต่างๆ บนเซิร์ฟเวอร์ โดยทั่วไป ไฟล์เหล่านี้จะถูกเขียนด้วยภาษาที่อ่านง่าย เช่น INI, YAML หรือ JSON ซึ่งช่วยให้ผู้ดูแลระบบสามารถปรับแต่งค่าต่างๆ ได้อย่างสะดวก</p>
+            
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1NTG2kaErI-eiw8BvfVRygWq1aLPjOn8r?usp=sharing" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1z3siN52SGbVyI_HO7QZfqkBOL5BhEuTm" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Module 6 -->
+            <div class="module-card" id="module6">
+                <div class="module-header">
+                    <div class="module-number">6</div>
+                    <h3>การสร้างฐานข้อมูลและผู้ใช้</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1syCNJ2D_Sa2cBqBRgjMVKy1xBXn7oaiR/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+            
+                    <p>เข้าใจคำสั่งที่เกี่ยวกับการสร้างผู้ใช้(User) และการมอบสิทธิให้แก่ผู้ใช้</p>
+            
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1TY0zhJFnnV6ZYyUrV0-ZvqTtLOL4L8f9?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1syCNJ2D_Sa2cBqBRgjMVKy1xBXn7oaiR" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Module 7 -->
+            <div class="module-card" id="module7">
+                <div class="module-header">
+                    <div class="module-number">7</div>
+                    <h3>PostgreSQL CRUD: สุดยอดการจัดการข้อมูล</h3>
+                </div>
+                <div class="module-content">
+                   
+                    <p>การทำงานกับฐานข้อมูล PostgreSQL ผ่านการดำเนินการที่สำคัญที่สุด 4 ประการ ได้แก่ Create, Read, Update, และ Delete (CRUD) ซึ่งเป็นพื้นฐานที่สำคัญในการพัฒนาระบบฐานข้อมูลในโลกจริง</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1OJQn9t4_Ix-yrKDjZb19EKLbbHu-BlbE?usp=sharing" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="module-card" id="module8">
+                <div class="module-header">
+                    <div class="module-number">8</div>
+                    <h3>Table Inheritance and Partitioning</h3>
+                </div>
+                <div class="module-content">
+                    
+                    <p>แนวทางการสร้างตารางใน PostgreSQL ที่สามารถสืบทอดคุณสมบัติและข้อมูลจากตารางอื่นๆ ได้ ทำให้การจัดการข้อมูลในลักษณะเหมือนกับการจัดการ Object-Oriented Database ในการใช้ Inheritance ตารางลูก (child table) สามารถสืบทอดข้อมูลและโครงสร้างจากตารางแม่ (parent table) ได้ โดยไม่ต้องคัดลอกข้อมูลเหล่านั้นใหม่</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1Kc6SudIFshg32nSJLkEI6YZuZreCx_Du?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+       
+                    </div>
+                 
+                </div>
+            </div>
+
+            <!-- Module 9 -->
+            <div class="module-card" id="module9">
+                <div class="module-header">
+                    <div class="module-number">9</div>
+                    <h3>Backup and restore</h3>
+                </div>
+                <div class="module-content">
+                    
+                    <p>การทำสำรองข้อมูล (Backup) และการกู้คืนข้อมูล (Restore) ช่วยให้สามารถกู้ข้อมูลในกรณีที่เกิดข้อผิดพลาดหรือความเสียหายได้ นอกจากนี้ยังใช้ในการย้ายข้อมูลระหว่างเซิร์ฟเวอร์หรือฐานข้อมูลต่างๆ</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1LXKHO_2WtZo2TB_gB1-rOj1t-X-UAJ_u?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+      
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="module-card" id="module10">
+                <div class="module-header">
+                    <div class="module-number">10</div>
+                    <h3>Maintenance</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1NnW8KT1BM5IRkswPZWwn4HiYBeIt8o86/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+            
+                    <p>การบำรุงรักษาฐานข้อมูล PostgreSQL เป็นกระบวนการที่ช่วยให้ระบบฐานข้อมูลทำงานได้อย่างมีประสิทธิภาพและคงความเสถียรในระยะยาว การบำรุงรักษาประกอบด้วยการจัดการกับข้อมูลที่มีการเปลี่ยนแปลง เช่น การคืนพื้นที่ที่ไม่ใช้แล้ว การรวบรวมสถิติข้อมูลเพื่อเพิ่มประสิทธิภาพในการค้นหาข้อมูล และการตรวจสอบสถานะของระบบ รวมถึงการสำรองข้อมูลเพื่อป้องกันความสูญหายของข้อมูล การบำรุงรักษาฐานข้อมูล PostgreSQL เป็นสิ่งสำคัญเพื่อให้การใช้งานระบบฐานข้อมูลมีความปลอดภัยและทำงานได้ดีตลอดเวลา</p>
+            
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1XvLMoKFCjFXFNbZ-yKsBMuX4GYTIHacz?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1NnW8KT1BM5IRkswPZWwn4HiYBeIt8o86" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="module-card" id="module11">
+                <div class="module-header">
+                    <div class="module-number">11</div>
+                    <h3>Log Based Shipping Standby</h3>
+                </div>
+                <div class="module-content">
+                
+                    <p>เทคนิคการทำ Replication ที่ช่วยให้ข้อมูลจากฐานข้อมูลหลัก (Primary) ถูกส่งไปยังฐานข้อมูลสำรอง (Standby) ในลักษณะของการส่งข้อมูลที่มีการเปลี่ยนแปลงจากการทำงานในฐานข้อมูลหลัก เช่น การเพิ่ม, ลบ, หรืออัปเดตข้อมูล ซึ่งจะช่วยให้ฐานข้อมูลสำรองมีข้อมูลที่ทันสมัยและพร้อมใช้งานในกรณีที่ฐานข้อมูลหลักเกิดปัญหาหรือไม่สามารถใช้งานได้</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1-_OLRb_XeIA1b_qZ7ZGDUVlnqScGWFON?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                       
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="module-card" id="module12">
+                <div class="module-header">
+                    <div class="module-number">12</div>
+                    <h3>logical replication</h3>
+                </div>
+                <div class="module-content">
+                    <p>เป็นฟีเจอร์ที่ช่วยให้สามารถทำการ Replication ข้อมูลระหว่างฐานข้อมูลในระดับที่ละเอียดกว่า Physical Replication โดยสามารถเลือกเฉพาะตารางหรือข้อมูลบางส่วนจากฐานข้อมูลหลัก (Primary) เพื่อทำการส่งข้อมูลไปยังฐานข้อมูลสำรอง (Standby) หรือฐานข้อมูลอื่นๆ ซึ่งแตกต่างจาก Physical Replication ที่จะทำการสำเนาข้อมูลทั้งหมดของฐานข้อมูล</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1tU7FOhUyKu5pnDIXEExg7BrFk7l8NNpT?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                    </div>
+              
+                </div>
+            </div>
+
+            <div class="module-card" id="module13">
+                <div class="module-header">
+                    <div class="module-number">13</div>
+                    <h3>PGBouncer</h3>
+                </div>
+             <div class="module-content">
+                    <p>ครื่องมือสำหรับการจัดการการเชื่อมต่อฐานข้อมูล PostgreSQL ซึ่งช่วยให้สามารถควบคุมการเชื่อมต่อจำนวนมากได้อย่างมีประสิทธิภาพโดยการใช้ Connection Pooling ทำให้ PostgreSQL สามารถรองรับการเชื่อมต่อที่มีจำนวนสูงและมีประสิทธิภาพมากขึ้น โดยไม่ต้องเปิดหรือปิดการเชื่อมต่อใหม่ทุกครั้ง</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1yvBcPw_78PYF6sSPOVUuwRw3H0W-uTF2?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                    </div>
+               
+                </div>
+            </div>
+
+            <div class="module-card" id="module14">
+                <div class="module-header">
+                    <div class="module-number">14</div>
+                    <h3>High Availability</h3>
+                </div>
+                <div class="module-content">
+            
+                    <p>การเรียนเกี่ยวกับ High Availability จะช่วยให้คุณเข้าใจวิธีการออกแบบระบบที่ทนทาน สามารถรับมือกับข้อผิดพลาด และทำงานต่อเนื่องโดยไม่มีการหยุดทำงานหรือสูญเสียข้อมูล รวมทั้งเครื่องมือที่ใช้ในการทำ HA, เทคนิคการทำ Failover และการเพิ่มประสิทธิภาพของระบบในกรณีที่เกิดปัญหาหรือโหลดที่เพิ่มขึ้น
+
+                        การเรียนเรื่องนี้จะเตรียมคุณให้พร้อมในการออกแบบและดูแลระบบที่มีการใช้งานในระดับสูง และทำให้คุณสามารถรับมือกับสถานการณ์ที่มีความซับซ้อนได้อย่างมั่นใจ</p>
+                    <div class="resource-links">
+                        <a href="https://drive.google.com/drive/folders/1rYsyS7s8-0FZNyJJim12DCIev4cIJmmy?usp=drive_link" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                    </div>
+              
+                </div>
+            </div>
+
+            <div class="module-card" id="module15">
+                <div class="module-header">
+                    <div class="module-number">15</div>
+                    <h3>การถอนการติดตั้ง PostgreSQL</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1v-aiM8TTiq0Q0vI7m53hyGZWhkwOvclJ/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <p>การถอนการติดตั้ง PostgreSQL</p>
+                    <div class="resource-links">
+                        <a href="Slide/unit10.zip" class="btn secondary" download>ดาวน์โหลดสไลด์</a>
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1v-aiM8TTiq0Q0vI7m53hyGZWhkwOvclJ" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module-card" id="module16">
+                <div class="module-header">
+                    <div class="module-number">Other</div>
+                    <h3>Hand on primary</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/13nWh-jnuXSyvQJq_d9BOX_fZN9zVGlzm/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <p>การสาธิตหรือฝึกปฏิบัติเกี่ยวกับการตั้งค่า Primary Server ใน PostgreSQL เพื่อเตรียมความพร้อมสำหรับการทำ Replication</p>
+                    <div class="resource-links">
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=13nWh-jnuXSyvQJq_d9BOX_fZN9zVGlzm" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module-card" id="module17">
+                <div class="module-header">
+                    <div class="module-number">Other</div>
+                    <h3>Config primary to replication</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1L34rES1bWpe_2sQhf3T0w9leNyI9iVRw/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <p>การสาธิตขั้นตอนการตั้งค่า Primary Server สำหรับการทำ Replication ใน PostgreSQL ซึ่งเป็นกระบวนการสำคัญในการทำให้ฐานข้อมูลสามารถทำงานร่วมกับ Replica ได้อย่างสมบูรณ์</p>
+                    <div class="resource-links">
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1L34rES1bWpe_2sQhf3T0w9leNyI9iVRw" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module-card" id="module18">
+                <div class="module-header">
+                    <div class="module-number">Other</div>
+                    <h3>configuring the replica</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1JB7FOiUSg4xGinlyUYqVCQbUEb43hWnF/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <p>การสาธิตการตั้งค่า Replica Server เพื่อเชื่อมต่อกับ Primary Server สำหรับการทำ Replication ใน PostgreSQL ซึ่งเป็นขั้นตอนสำคัญในการทำให้ฐานข้อมูลสามารถซิงค์ข้อมูลจาก Primary ไปยัง Replica ได้</p>
+                    <div class="resource-links">
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1JB7FOiUSg4xGinlyUYqVCQbUEb43hWnF" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module-card" id="module19">
+                <div class="module-header">
+                    <div class="module-number">Other</div>
+                    <h3>Test replication</h3>
+                </div>
+                <div class="module-content">
+                    <div class="video-container">
+                        <!-- ฝังวิดีโอจาก Google Drive -->
+                        <iframe src="https://drive.google.com/file/d/1toWN9RnePen0OQBBrFQn3pQsKJUolXDV/preview" 
+                                width="250" 
+                                height="200" 
+                                allow="autoplay" 
+                                loading="lazy" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <p>การทดสอบการทำงานของระบบ Replication ระหว่าง Primary Server และ Replica Server ใน PostgreSQL เพื่อยืนยันว่าการตั้งค่า Replication ทำงานได้ถูกต้องและข้อมูลถูกซิงค์อย่างสมบูรณ์</p>
+                    <div class="resource-links">
+                        <!-- ปุ่มดาวน์โหลดวิดีโอ -->
+                        <a href="https://drive.google.com/uc?export=download&id=1toWN9RnePen0OQBBrFQn3pQsKJUolXDV" 
+                           class="btn secondary" 
+                           download>
+                           ดาวน์โหลดวิดีโอ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+            
+    </section>
+
+    <!-- All Slides Download Section -->
+    <section id="slides" class="section">
+        <h2>All Slides Download</h2>
+        <ul>
+            <li><a href="https://drive.google.com/drive/folders/19Kf77yHwy242tLWuoJTUb0QsCTxGxGeu?usp=drive_link" download>Unit 1: การติดตั้ง PostgreSQL</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1te1NuPcSJvh8jcQR7QUNfG-QqUQrwpd8?usp=sharing" download>Unit 2: Replicationและmaster_slave</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1CIOCWtzrAWva2fCUkL_hEXypAh4xRORN?usp=drive_link" download>Unit 3: PostgreSQL Architecture</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1Rz3IhITjwFgUO6rV8syxxACEm727jhd9?usp=drive_link" download>Unit 4: Database Cluster</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1NTG2kaErI-eiw8BvfVRygWq1aLPjOn8r?usp=drive_link" download>Unit 5: Configuration Files</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1TY0zhJFnnV6ZYyUrV0-ZvqTtLOL4L8f9?usp=drive_link" download>Unit 6: การสร้างฐานข้อมูลและผู้ใช้</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1OJQn9t4_Ix-yrKDjZb19EKLbbHu-BlbE?usp=drive_link" download>Unit 7: PostgreSQL CRUD: สุดยอดการจัดการข้อมูล</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1Kc6SudIFshg32nSJLkEI6YZuZreCx_Du?usp=drive_link" download>Unit 8: Table Inheritance and Tablespace</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1LXKHO_2WtZo2TB_gB1-rOj1t-X-UAJ_u?usp=drive_link" download>Unit 9: Backup and Restore</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1XvLMoKFCjFXFNbZ-yKsBMuX4GYTIHacz?usp=drive_link" download>Unit 10: Maintenance</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1-_OLRb_XeIA1b_qZ7ZGDUVlnqScGWFON?usp=drive_link" download>Unit 11: Log Based Shipping Standby</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1tU7FOhUyKu5pnDIXEExg7BrFk7l8NNpT?usp=sharing" download>Unit 12: logical replication</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1yvBcPw_78PYF6sSPOVUuwRw3H0W-uTF2?usp=drive_link" download>Unit 13: PGBouncer</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1rYsyS7s8-0FZNyJJim12DCIev4cIJmmy?usp=sharing" download>Unit 14: High Availability</a></li>
+        </ul>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>ติดต่อ: chithinan.chan@gmail.com</p>
+    </footer>
+</body>
+</html>

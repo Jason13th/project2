@@ -1,0 +1,213 @@
+/* Base styles and variables */
+:root {
+    --primary: #2563eb;      /* Primary blue */
+    --secondary: #1e40af;    /* Dark blue */
+    --accent: #3b82f6;       /* Bright blue */
+    --text: #1f2937;         /* Text color */
+    --bg-light: #f3f4f6;     /* Light background */
+    --success: #10b981;      /* Green success */
+    --warning: #f59e0b;      /* Yellow warning */
+    --error: #ef4444;        /* Red error */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    --radius: 0.75rem;       /* Rounded corners */
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Body and page setup */
+body {
+    background-color: var(--bg-light);
+    color: var(--text);
+    line-height: 1.8;
+    padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary);
+    border-radius: var(--radius);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Section Container */
+.section-container {
+    padding: 2rem 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Module Cards */
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.module-header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.module-number {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.module-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.module-content video {
+    max-width: 100%;
+    border-radius: var(--radius);
+}
+
+.resource-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.resource-links .btn {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.resource-links .btn:hover {
+    background-color: var(--secondary);
+}
+
+.module-content .btn {
+    background-color: var(--success);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.module-content .btn:hover {
+    background-color: var(--primary);
+}
+
+/* All Slides Section */
+#slides ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#slides a {
+    display: block;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+#slides a:hover {
+    background-color: var(--secondary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
